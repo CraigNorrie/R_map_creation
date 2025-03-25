@@ -20,7 +20,7 @@ shore = st_read("./WSDOT_major_shorlines/MajorShorelines.shp")# Read in Washingt
 
 
 # Creates a data frame with the coordinates of the sites used in t --------
-Site = c("Thorndyke Bay", "Eld Inlet", "Manchester", "Hood Head") 
+Site = c("Thorndyke Bay", "South Sound", "Manchester", "Hood Head") 
 decLat = c(47.807765, 47.128306, 47.573497, 47.883779)
 decLong = c(-122.739104, -122.960099, -122.545168, -122.613236)
 farmType = c("Intertidal", "Intertidal", "Subtidal", "Subtidal")
@@ -41,7 +41,7 @@ PS_site_map = ggplot() +
              col = "black") +
   #picking what colors I want each farm type to be
   scale_fill_manual(
-    values =c("blue", 'yellow'),
+    values =c("yellow", 'blue'),
     name="Farm Type"
   )+
   #labs(title = "Map of Study Sites", 
